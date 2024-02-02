@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+
+/* main page css */
+
+
+.main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.a,.a:active,.a:visited,.a:hover{
+    text-decoration: none;
+}
+
+.play{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    font-size: 4.5rem;
+    letter-spacing: -1px;
+    font-family: sans-serif;
+    border: 9px solid rgb(59, 167, 26);
+    background-color: rgb(197, 253, 12);
+    box-shadow: 8px 8px rgb(16, 49, 3);
+    transition: all 0.7s;
+    color: rgb(5, 11, 1);
+    
+}
+
+.a:active{
+    color: rgb(0, 128, 28);
+}
+
+.play:hover{
+    transform: scale(1.1);
+    box-shadow: 15px 15px black;
+}
+
+
+
+/* game page css goes here */
+
+.screen{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.world{
+    position: absolute;
+    
+    /* width: 1450px;
+    height: 670px; */
+    
+    height: 95%;
+    width: 97%;
+    background-color: white;
+    border: 5px solid black;
+}
+
+.sky{
+    height: 70%;
+    width: 100%;
+    background-color: rgb(16, 153, 222);
+    background-image: url("sky.png");
+    background-size: cover;
+}
+
+.ground{
+    height: 30%;
+    width: 100%;
+    background-color: rgb(56, 196, 43);
+}
+
+
+
+.chicken{
+    position: absolute;
+    top: 1%;
+    left: 45%;
+    height: 120px;
+    width: 120px;
+    /* background-color: black; */
+    background-image: url("chicken.png");
+    background-size: cover ;
+    /* border: 2px red solid; */
+
+}
+
+.egg{
+    position: absolute;
+    top: 16.5%;
+    left: 47%;
+    height: 64px;
+    width: 48px;
+    /* background-color: black; */
+    background-image: url("egg.png");
+    background-size: cover;
+    /* border: 2px red solid; */
+
+}
+.basket{
+    position: absolute;
+    bottom: 2%;
+    left: 45%;
+    height: 120px;
+    width: 200px;
+    /* background-color: black; */
+    background-image: url("basket.png");
+    background-size: cover ;
+    /* border: 2px red solid; */
+    transition: all 0.1s;
+}
+
+.score{
+    position: absolute;
+    top: 127px;
+    /* left: 30px; */
+    right: 28px;
+    font-size: 2.5rem;
+}
+
+.playBtn{
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    background-color: rgb(61, 164, 228);
+    border: 2px black solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px;
+    font-size: 4rem;
+    transition: transform 1s;
+    /* transition: box-shadow .7s; */
+
+    padding: 10px;
+}
+
+.playBtn:hover{
+    transform: scale(1.1);
+    box-shadow: 6px 6px black;
+}
+
+
+
+.egg,.chicken,.basket{
+    opacity: 0;
+}
+.visible{
+    opacity: 1;
+}
+
